@@ -1,0 +1,22 @@
+.aditii-container {
+  background-color: #fff !important;
+}
+
+.aditii-navbar {
+  padding: 60px 0 20px 0;
+  background-color: #fff !important;
+}
+
+aditii-rightLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aditii-rightLink img:first-child {
+  margin-right: 17px;
+}
+/*# sourceMappingURL=style.css.map */
