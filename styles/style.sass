@@ -1,9 +1,17 @@
+@import "variable"
+@import "fonts"
+.aditii-container
+    max-width: 986px
+    margin: 0 auto
+
+.aditii-text
+    color: $colorWhite !important
 
 .aditii-navbar
     padding: 60px 0 20px 0
-    background-color: #fff !important
+    background-color: $colorWhite !important
 
-aditii-rightLink
+.aditii-rightLink
     display: flex
     justify-content: space-between
 
@@ -11,18 +19,83 @@ aditii-rightLink
     margin-right: 17px
 
 .aditii-menu
-    background: #4ccfc1
-
-.nav-link
+    background: $colorBackLight
+.navbar-nav .nav-link
+    padding: 9px 25px
+    text-align: center
     font-size: 21px
-    font-family: 'Bebas Neue', cursive
+    font-family: 'Bebas Neue', cursive, sans-serif
+    line-height: 0.9
+.navbar-nav .nav-item
+    min-width: 98px
+
+.navbar-light .navbar-toggler
+    border-color: $colorWhite !important
+
+.navbar-toggler:focus
+    box-shadow: 0 0 0 0.20rem $colorWhite !important
+
+.navbar-light .navbar-toggler-icon
+    background-image: none
+    color: $colorWhite !important
+    text-align: center
+    font-size: 22px
+    display: inline
+
+.navbar-nav .nav-item:nth-child(n+2)
+    border-left: 2px solid $colorWhite
+    height: 30px
+.bg-light
+    background-color: transparent!important
+
+.navbar-brand
+    margin-right: 0
+
+.levi-container
+    background: $colorBackDark
+
+.levi-container-row
+    padding: 67px 0 54px 0
+.levi-img
+    display: flex
+    justify-content: center
+
+.btn
+    padding: 7px 25px
+    font: 25px 'Bebas Neue', sans-serif
+    display: block
+    width: 143px
+    height: 49px
+    color: $colorWhite
+    background-color: transparent
+    border: solid 3px $colorWhite
+    border-radius: 10px
+    margin-bottom: 51px
+
+.btn-primary:hover,
+.btn-primary:focus
     color: #fff
-.nav
-    min-height: 36px
-    padding: 0 140px 0 140px
+    background-color: #a1a1a1
+    border-color: #fff
+    box-shadow: 0 0 0 0.01rem
 
-.nav .nav-item:nth-child(n+2)
-    border-left: 1px solid #fff
+.card
+    background-color: transparent
+    border: none
+    flex: 0 0 415px
+    box-sizing: border-box
 
-.nav .nav-item
-    flex: 0 0
+.card-body
+    padding: 0
+
+.card-title
+    font-size: 61px
+    font-family: 'Bebas Neue', cursive, sans-serif
+    line-height: 0.89
+    margin: 15px 0 26px 0
+
+.card-text
+    font-size: 17px
+    font-family: 'Open Sans', sans-serif
+    line-height: 1.65
+    margin-bottom: 32px
