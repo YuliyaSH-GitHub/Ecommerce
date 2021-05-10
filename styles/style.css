@@ -154,19 +154,24 @@
   border: transparent;
 }
 
+.branded-card img {
+  height: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .branded-col {
   padding-top: 21px;
   padding-bottom: 18px;
 }
 
 .branded-col2 {
-  border-right: 1px solid #afafaf;
-  border-left: 1px solid #afafaf;
+  border-right: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
 }
 
 .branded-btn {
-  width: 59px;
-  height: 32px;
+  padding: 10px 15px;
   border-radius: 3px;
   background-color: #3cc395;
   border: #3cc395;
@@ -184,6 +189,8 @@
 
 .branded-btn img {
   width: 202px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .branded-card-title {
@@ -207,5 +214,94 @@
 .products-goods03 {
   margin-right: 77px;
   margin-left: 44px;
+}
+
+.products-title {
+  min-height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.products-title h5 {
+  margin: 0 0 0 60px;
+  font: 31px 'Bebas Neue', sans-serif;
+}
+
+.products-img {
+  height: 126px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 20px;
+}
+
+.products-card {
+  border: 1px solid #e7e7e7;
+  -webkit-box-shadow: 0 0 0 0.1rem #e7e7e7;
+          box-shadow: 0 0 0 0.1rem #e7e7e7;
+  border-bottom: 5px solid #3cc395;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-card-body {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-btn-div {
+  min-width: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.products-btn-div div {
+  margin: 0 15px 0 0;
+}
+
+.products-card-title {
+  margin: 12px 0;
+}
+
+.products-col {
+  padding: 30px;
 }
 /*# sourceMappingURL=style.css.map */
