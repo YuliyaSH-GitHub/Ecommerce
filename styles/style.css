@@ -23,6 +23,13 @@
           justify-content: space-between;
 }
 
+.aditii-rightLink__sum {
+  width: 50px;
+  height: 27px;
+  font: 33px 'Bebas Neue', sans-serif;
+  color: #a1a1a1;
+}
+
 .aditii-rightLink img:first-child {
   margin-right: 17px;
 }
@@ -90,7 +97,7 @@
           justify-content: center;
 }
 
-.btn {
+.levi-btn {
   padding: 7px 25px;
   font: 25px 'Bebas Neue', sans-serif;
   display: block;
@@ -103,8 +110,8 @@
   margin-bottom: 51px;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+.levi-btn:hover,
+.levi-btn:focus {
   color: #fff;
   background-color: #a1a1a1;
   border-color: #fff;
@@ -112,7 +119,7 @@
           box-shadow: 0 0 0 0.01rem;
 }
 
-.card {
+.levi-card {
   background-color: transparent;
   border: none;
   -webkit-box-flex: 0;
@@ -122,21 +129,83 @@
           box-sizing: border-box;
 }
 
-.card-body {
+.levi-card-body {
   padding: 0;
 }
 
-.card-title {
-  font-size: 61px;
-  font-family: 'Bebas Neue', cursive, sans-serif;
+.levi-card-title {
+  font: 61px 'Bebas Neue', cursive, sans-serif;
   line-height: 0.89;
   margin: 15px 0 26px 0;
 }
 
-.card-text {
+.levi-card-text {
   font-size: 17px;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.65;
   margin-bottom: 32px;
+}
+
+.branded-card {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: transparent;
+}
+
+.branded-col {
+  padding-top: 21px;
+  padding-bottom: 18px;
+}
+
+.branded-col2 {
+  border-right: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+}
+
+.branded-btn {
+  width: 59px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #3cc395;
+  border: #3cc395;
+  color: #fff;
+  font: 19px 'Bebas Neue', sans-serif;
+}
+
+.branded-btn:hover,
+.branded-btn:focus {
+  background-color: #a1a1a1;
+  border-color: #fff;
+  -webkit-box-shadow: 0 0 0 0.01rem;
+          box-shadow: 0 0 0 0.01rem;
+}
+
+.branded-btn img {
+  width: 202px;
+}
+
+.branded-card-title {
+  font: 27px 'Bebas Neue', sans-serif;
+  line-height: 0.93;
+  text-align: left;
+  color: #afafaf;
+  margin-bottom: 20px;
+}
+
+.branded-card-body {
+  padding-left: 0;
+  padding-top: 32px;
+}
+
+.products-goods02 {
+  margin-right: 52px;
+  margin-left: 15px;
+}
+
+.products-goods03 {
+  margin-right: 77px;
+  margin-left: 44px;
 }
 /*# sourceMappingURL=style.css.map */
