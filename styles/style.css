@@ -47,7 +47,8 @@
 }
 
 .navbar-nav .nav-item {
-  min-width: 98px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .navbar-light .navbar-toggler {
@@ -231,7 +232,7 @@
 }
 
 .products-title h5 {
-  margin: 0 0 0 60px;
+  margin: 0 0 0 30px;
   font: 31px 'Bebas Neue', sans-serif;
 }
 
@@ -303,5 +304,64 @@
 
 .products-col {
   padding: 30px;
+}
+
+.levi-footer {
+  min-height: 337px;
+}
+
+.levi-footer__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-bottom: 41px;
+}
+
+.levi-footer h5 {
+  font: 27px 'Bebas Neue', sans-serif;
+  line-height: 0.93;
+  text-align: left;
+  margin: 43px 0 32px 0;
+}
+
+.levi-footer a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font: 15px 'Open Sans', sans-serif;
+  line-height: 1.87;
+  text-align: left;
+}
+
+.footer-container {
+  background: #2da89b;
+}
+
+.copyright-container {
+  min-height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container p {
+  font: 15px 'Open Sans', sans-serif;
+  line-height: 1.87;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
