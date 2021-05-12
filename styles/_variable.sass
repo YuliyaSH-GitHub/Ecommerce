@@ -24,6 +24,18 @@ $colorBorder: #e7e7e7
 %fontFamilyExtra
     font-family: 'Open Sans', sans-serif
 
+%styleButton
+    padding: 12px 15px 10px 15px
+    border-radius: 3px
+    background-color: $colorButton
+    border: $colorButton
+    color: $colorMain
+
+%styleButtonHover
+    background-color: $colorButtonHover
+    border-color: $colorMain
+    box-shadow: 0 0 0 0.01rem
+
 =fontMain ($_fontSize, $_lineHeight)
     font-size: $_fontSize
     @extend %fontFamilyMain

@@ -93,10 +93,31 @@
 .branded-card
     flex-direction: row
     border: transparent
+    img
+        height: 140px
+        object-fit: contain
+    .branded-btn
+        @extend %styleButton
+        +fontMain (19px, 1)
+        &:hover,
+        &:focus
+            @extend %styleButtonHover
+        img
+            width: 202px
+            object-fit: contain
+    &-title
+        +fontMain (27px, 0.93)
+        text-align: left
+        color: $colorBrandedTitle
+        margin-bottom: 20px
+    &-body
+        padding-left: 0
+        padding-top: 32px
+    .branded-goods02
+        margin: 0 52px 0 15px
 
-.branded-card img
-    height: 140px
-    object-fit: contain
+    .branded-goods03
+        margin: 0 77px 0 44px
 
 .branded-col
     padding: 21px 0 18px 0
@@ -105,79 +126,49 @@
     border-right: 1px solid $colorBorder
     border-left: 1px solid $colorBorder
 
-.branded-btn
-    padding: 10px 15px
-    border-radius: 3px
-    background-color: $colorButton
-    border: $colorButton
-    color: $colorMain
-    +fontMain (19px, 1)
-
-.branded-btn:hover,
-.branded-btn:focus
-    background-color: $colorButtonHover
-    border-color: $colorMain
-    box-shadow: 0 0 0 0.01rem
-.branded-btn img
-    width: 202px
-    object-fit: contain
-
-.branded-card-title
-    +fontMain (27px, 0.93)
-    text-align: left
-    color: $colorBrandedTitle
-    margin-bottom: 20px
-
-.branded-card-body
-    padding-left: 0
-    padding-top: 32px
-
-.products-goods02
-    margin: 0 52px 0 15px
-
-.products-goods03
-    margin: 0 77px 0 44px
-
 .products-title
     min-height: 67px
     +justifyContent (start)
     align-items: center
     margin-bottom: 30px
+    h5
+        margin: 0 0 0 30px
+        +fontMain (31px, 0.81)
 
-.products-title h5
-    margin: 0 0 0 30px
-    +fontMain (31px, 0.81)
-
-.products-img
-    height: 126px
-    object-fit: contain
-    margin-top: 20px
-
-.products-card
-    border: 1px solid $colorBorder
-    box-shadow: 0 0 0 0.10rem $colorBorder
-    border-bottom: 5px solid $colorButton
-    @extend %flexColumnCenter
-
-.products-card-body
-    padding: 0
-    @extend %flexColumnCenter
-    align-items: center
-
-.products-btn-div
-    min-width: 135px
-    +justifyContent (space-between)
-    align-items: center
-    margin-bottom: 35px
-
-.products-btn-div div
-    margin: 0 15px 0 0
-
-.products-card-title
-    margin: 12px 0
-
-.products-col
-    padding: 30px
+.products
+    &-img
+        height: 126px
+        object-fit: contain
+        margin-top: 20px
+    &-card
+        border: 1px solid $colorBorder
+        box-shadow: 0 0 0 0.10rem $colorBorder
+        border-bottom: 5px solid $colorButton
+        @extend %flexColumnCenter
+        &-title
+            margin: 12px 0
+        &-body
+            padding: 0
+            @extend %flexColumnCenter
+            align-items: center
+        .products-btn-div
+            min-width: 135px
+            +justifyContent (space-between)
+            align-items: center
+            margin-bottom: 35px
+            a
+                @extend %styleButton
+                +fontMain (19px, 1)
+                &:hover,
+                &:focus
+                    @extend %styleButtonHover
+    .products-btn-price
+        margin: 0 15px 0 0
+        +fontMain (27px, 0.93)
+        text-align: left
+        color: $colorBrandedTitle
+    .products-col
+        padding: 30px
 
 .levi-footer
     min-height: 337px
@@ -185,27 +176,24 @@
         @extend %flexColumnCenter
         padding: 0 40px
         margin-bottom: 41px
-
-.levi-footer h5
-    +fontMain (27px, 0.93)
-    text-align: left
-    margin: 43px 0 32px 0
-
-.levi-footer a
-    display: block
-    text-decoration: none
-    color: inherit
-    +fontExtra (15px, 1.87)
-    text-align: left
+    h5
+        +fontMain (27px, 0.93)
+        text-align: left
+        margin: 43px 0 32px 0
+    a
+        display: block
+        text-decoration: none
+        color: inherit
+        +fontExtra (15px, 1.87)
+        text-align: left
 
 .footer-container
     background: $colorFooter
+    p
+        +fontExtra (15px, 1.87)
+        margin: 0
 
-.copyright-container
-    min-height: 46px
-    +justifyContent (center)
-    align-items: center
-
-.footer-container p
-    +fontExtra (15px, 1.87)
-    margin: 0
+    .copyright-container
+        min-height: 46px
+        +justifyContent (center)
+        align-items: center

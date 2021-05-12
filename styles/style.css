@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-.aditii-navbar .aditii-rightLink, .levi-container-row .levi-img, .products-title, .products-btn-div, .copyright-container {
+.aditii-navbar .aditii-rightLink, .levi-container-row .levi-img, .products-title, .products-card .products-btn-div, .footer-container .copyright-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,12 +19,27 @@
           justify-content: center;
 }
 
-.aditii-navbar .aditii-rightLink__sum, .navbar-nav .nav-link, .levi-container-row .levi-card-title, .levi-container-row .levi-card-btn, .branded-btn, .branded-card-title, .products-title h5, .levi-footer h5 {
+.aditii-navbar .aditii-rightLink__sum, .navbar-nav .nav-link, .levi-container-row .levi-card-title, .levi-container-row .levi-card-btn, .branded-card .branded-btn, .branded-card-title, .products-title h5, .products-card .products-btn-div a, .products .products-btn-price, .levi-footer h5 {
   font-family: 'Bebas Neue', sans-serif;
 }
 
 .levi-container-row .levi-card-text, .levi-footer a, .footer-container p {
   font-family: 'Open Sans', sans-serif;
+}
+
+.branded-card .branded-btn, .products-card .products-btn-div a {
+  padding: 12px 15px 10px 15px;
+  border-radius: 3px;
+  background-color: #3cc395;
+  border: #3cc395;
+  color: #fff;
+}
+
+.branded-card .branded-btn:hover, .branded-card .branded-btn:focus, .products-card .products-btn-div a:hover, .products-card .products-btn-div a:focus {
+  background-color: #a1a1a1;
+  border-color: #fff;
+  -webkit-box-shadow: 0 0 0 0.01rem;
+          box-shadow: 0 0 0 0.01rem;
 }
 
 .aditii-container {
@@ -180,34 +195,12 @@
      object-fit: contain;
 }
 
-.branded-col {
-  padding: 21px 0 18px 0;
-}
-
-.branded-col2 {
-  border-right: 1px solid #e7e7e7;
-  border-left: 1px solid #e7e7e7;
-}
-
-.branded-btn {
-  padding: 10px 15px;
-  border-radius: 3px;
-  background-color: #3cc395;
-  border: #3cc395;
-  color: #fff;
+.branded-card .branded-btn {
   font-size: 19px;
   line-height: 1;
 }
 
-.branded-btn:hover,
-.branded-btn:focus {
-  background-color: #a1a1a1;
-  border-color: #fff;
-  -webkit-box-shadow: 0 0 0 0.01rem;
-          box-shadow: 0 0 0 0.01rem;
-}
-
-.branded-btn img {
+.branded-card .branded-btn img {
   width: 202px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -226,12 +219,21 @@
   padding-top: 32px;
 }
 
-.products-goods02 {
+.branded-card .branded-goods02 {
   margin: 0 52px 0 15px;
 }
 
-.products-goods03 {
+.branded-card .branded-goods03 {
   margin: 0 77px 0 44px;
+}
+
+.branded-col {
+  padding: 21px 0 18px 0;
+}
+
+.branded-col2 {
+  border-right: 1px solid #e7e7e7;
+  border-left: 1px solid #e7e7e7;
 }
 
 .products-title {
@@ -265,6 +267,10 @@
   border-bottom: 5px solid #3cc395;
 }
 
+.products-card-title {
+  margin: 12px 0;
+}
+
 .products-card-body {
   padding: 0;
   -webkit-box-align: center;
@@ -272,7 +278,7 @@
           align-items: center;
 }
 
-.products-btn-div {
+.products-card .products-btn-div {
   min-width: 135px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -283,15 +289,20 @@
   margin-bottom: 35px;
 }
 
-.products-btn-div div {
+.products-card .products-btn-div a {
+  font-size: 19px;
+  line-height: 1;
+}
+
+.products .products-btn-price {
   margin: 0 15px 0 0;
+  font-size: 27px;
+  line-height: 0.93;
+  text-align: left;
+  color: #afafaf;
 }
 
-.products-card-title {
-  margin: 12px 0;
-}
-
-.products-col {
+.products .products-col {
   padding: 30px;
 }
 
@@ -324,7 +335,13 @@
   background: #2da89b;
 }
 
-.copyright-container {
+.footer-container p {
+  font-size: 15px;
+  line-height: 1.87;
+  margin: 0;
+}
+
+.footer-container .copyright-container {
   min-height: 46px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -332,11 +349,5 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.footer-container p {
-  font-size: 15px;
-  line-height: 1.87;
-  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
