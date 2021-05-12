@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.aditii-navbar .aditii-rightLink, .levi-img, .products-title, .products-btn-div, .copyright-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-card, .products-card-body, .levi-footer__col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aditii-navbar .aditii-rightLink__sum, .navbar-nav .nav-link, .levi-btn, .levi-card-title, .branded-btn, .branded-card-title, .products-title h5, .levi-footer h5 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.levi-card-text, .levi-footer a, .footer-container p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .aditii-container {
   max-width: 986px;
   margin: 0 auto;
@@ -14,23 +41,21 @@
   background-color: #fff !important;
 }
 
-.aditii-rightLink {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.aditii-navbar .aditii-rightLink {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.aditii-rightLink__sum {
+.aditii-navbar .aditii-rightLink__sum {
   width: 50px;
   height: 27px;
-  font: 33px 'Bebas Neue', sans-serif;
+  font-size: 33px;
+  line-height: 1.32;
   color: #a1a1a1;
 }
 
-.aditii-rightLink img:first-child {
+.aditii-navbar .aditii-rightLink img:first-child {
   margin-right: 17px;
 }
 
@@ -42,13 +67,11 @@
   padding: 9px 25px;
   text-align: center;
   font-size: 21px;
-  font-family: 'Bebas Neue', cursive, sans-serif;
   line-height: 0.9;
 }
 
 .navbar-nav .nav-item {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
 }
 
 .navbar-light .navbar-toggler {
@@ -90,17 +113,14 @@
 }
 
 .levi-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .levi-btn {
-  padding: 7px 25px;
-  font: 25px 'Bebas Neue', sans-serif;
+  font-size: 25px;
+  line-height: 1.35;
   display: block;
   width: 143px;
   height: 49px;
@@ -108,6 +128,7 @@
   background-color: transparent;
   border: solid 3px #fff;
   border-radius: 10px;
+  padding: 7px 25px;
   margin-bottom: 51px;
 }
 
@@ -135,14 +156,13 @@
 }
 
 .levi-card-title {
-  font: 61px 'Bebas Neue', cursive, sans-serif;
+  font-size: 61px;
   line-height: 0.89;
   margin: 15px 0 26px 0;
 }
 
 .levi-card-text {
   font-size: 17px;
-  font-family: 'Open Sans', sans-serif;
   line-height: 1.65;
   margin-bottom: 32px;
 }
@@ -162,8 +182,7 @@
 }
 
 .branded-col {
-  padding-top: 21px;
-  padding-bottom: 18px;
+  padding: 21px 0 18px 0;
 }
 
 .branded-col2 {
@@ -177,7 +196,8 @@
   background-color: #3cc395;
   border: #3cc395;
   color: #fff;
-  font: 19px 'Bebas Neue', sans-serif;
+  font-size: 19px;
+  line-height: 1;
 }
 
 .branded-btn:hover,
@@ -195,7 +215,7 @@
 }
 
 .branded-card-title {
-  font: 27px 'Bebas Neue', sans-serif;
+  font-size: 27px;
   line-height: 0.93;
   text-align: left;
   color: #afafaf;
@@ -208,20 +228,15 @@
 }
 
 .products-goods02 {
-  margin-right: 52px;
-  margin-left: 15px;
+  margin: 0 52px 0 15px;
 }
 
 .products-goods03 {
-  margin-right: 77px;
-  margin-left: 44px;
+  margin: 0 77px 0 44px;
 }
 
 .products-title {
   min-height: 67px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -233,7 +248,8 @@
 
 .products-title h5 {
   margin: 0 0 0 30px;
-  font: 31px 'Bebas Neue', sans-serif;
+  font-size: 31px;
+  line-height: 0.81;
 }
 
 .products-img {
@@ -248,33 +264,10 @@
   -webkit-box-shadow: 0 0 0 0.1rem #e7e7e7;
           box-shadow: 0 0 0 0.1rem #e7e7e7;
   border-bottom: 5px solid #3cc395;
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .products-card-body {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -282,9 +275,6 @@
 
 .products-btn-div {
   min-width: 135px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -311,23 +301,12 @@
 }
 
 .levi-footer__col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 0 40px;
   margin-bottom: 41px;
 }
 
 .levi-footer h5 {
-  font: 27px 'Bebas Neue', sans-serif;
+  font-size: 27px;
   line-height: 0.93;
   text-align: left;
   margin: 43px 0 32px 0;
@@ -337,7 +316,7 @@
   display: block;
   text-decoration: none;
   color: inherit;
-  font: 15px 'Open Sans', sans-serif;
+  font-size: 15px;
   line-height: 1.87;
   text-align: left;
 }
@@ -348,9 +327,6 @@
 
 .copyright-container {
   min-height: 46px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -360,7 +336,7 @@
 }
 
 .footer-container p {
-  font: 15px 'Open Sans', sans-serif;
+  font-size: 15px;
   line-height: 1.87;
   margin: 0;
 }

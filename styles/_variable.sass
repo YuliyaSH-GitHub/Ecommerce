@@ -1,9 +1,39 @@
-$colorWhite: #fff
-$colorGrey: #a1a1a1
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
 
+$colorMain: #fff
+$colorButtonHover: #a1a1a1
 $colorBackLight: #4ccfc1
 $colorBackDark: #3fc5b3
 $colorButton: #3cc395
 $colorFooter: #2da89b
-$colorButtonGrey: #afafaf
-$colorBorderGrey: #e7e7e7
+$colorBrandedTitle: #afafaf
+$colorBorder: #e7e7e7
+
+%displayFlex
+    display: flex
+
+%flexColumnCenter
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+%fontFamilyMain
+    font-family: 'Bebas Neue', sans-serif
+
+%fontFamilyExtra
+    font-family: 'Open Sans', sans-serif
+
+=fontMain ($_fontSize, $_lineHeight)
+    font-size: $_fontSize
+    @extend %fontFamilyMain
+    line-height: $_lineHeight
+
+=fontExtra ($_fontSize, $_lineHeight)
+    font-size: $_fontSize
+    @extend %fontFamilyExtra
+    line-height: $_lineHeight
+
+=justifyContent ($_justifyContent)
+    @extend %displayFlex
+    justify-content: $_justifyContent
