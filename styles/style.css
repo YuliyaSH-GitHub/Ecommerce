@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-.aditii-navbar .aditii-rightLink, .levi-img, .products-title, .products-btn-div, .copyright-container {
+.aditii-navbar .aditii-rightLink, .levi-container-row .levi-img, .products-title, .products-btn-div, .copyright-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,11 +19,11 @@
           justify-content: center;
 }
 
-.aditii-navbar .aditii-rightLink__sum, .navbar-nav .nav-link, .levi-btn, .levi-card-title, .branded-btn, .branded-card-title, .products-title h5, .levi-footer h5 {
+.aditii-navbar .aditii-rightLink__sum, .navbar-nav .nav-link, .levi-container-row .levi-card-title, .levi-container-row .levi-card-btn, .branded-btn, .branded-card-title, .products-title h5, .levi-footer h5 {
   font-family: 'Bebas Neue', sans-serif;
 }
 
-.levi-card-text, .levi-footer a, .footer-container p {
+.levi-container-row .levi-card-text, .levi-footer a, .footer-container p {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -74,11 +74,16 @@
   padding: 0 10px;
 }
 
+.navbar-nav .nav-item:nth-child(n+2) {
+  border-left: 2px solid #fff;
+  height: 30px;
+}
+
 .navbar-light .navbar-toggler {
   border-color: #fff !important;
 }
 
-.navbar-toggler:focus {
+.navbar-light .navbar-toggler:focus {
   -webkit-box-shadow: 0 0 0 0.2rem #fff !important;
           box-shadow: 0 0 0 0.2rem #fff !important;
 }
@@ -91,17 +96,12 @@
   display: inline;
 }
 
-.navbar-nav .nav-item:nth-child(n+2) {
-  border-left: 2px solid #fff;
-  height: 30px;
+.navbar-light .navbar-brand {
+  margin-right: 0;
 }
 
 .bg-light {
   background-color: transparent !important;
-}
-
-.navbar-brand {
-  margin-right: 0;
 }
 
 .levi-container {
@@ -112,13 +112,39 @@
   padding: 67px 0 54px 0;
 }
 
-.levi-img {
+.levi-container-row .levi-img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.levi-btn {
+.levi-container-row .levi-card {
+  background-color: transparent;
+  border: none;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 415px;
+          flex: 0 0 415px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.levi-container-row .levi-card-body {
+  padding: 0;
+}
+
+.levi-container-row .levi-card-title {
+  font-size: 61px;
+  line-height: 0.89;
+  margin: 15px 0 26px 0;
+}
+
+.levi-container-row .levi-card-text {
+  font-size: 17px;
+  line-height: 1.65;
+  margin-bottom: 32px;
+}
+
+.levi-container-row .levi-card-btn {
   font-size: 25px;
   line-height: 1.35;
   display: block;
@@ -132,39 +158,12 @@
   margin-bottom: 51px;
 }
 
-.levi-btn:hover,
-.levi-btn:focus {
+.levi-container-row .levi-card-btn:hover, .levi-container-row .levi-card-btn:focus {
   color: #fff;
   background-color: #a1a1a1;
   border-color: #fff;
   -webkit-box-shadow: 0 0 0 0.01rem;
           box-shadow: 0 0 0 0.01rem;
-}
-
-.levi-card {
-  background-color: transparent;
-  border: none;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 415px;
-          flex: 0 0 415px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.levi-card-body {
-  padding: 0;
-}
-
-.levi-card-title {
-  font-size: 61px;
-  line-height: 0.89;
-  margin: 15px 0 26px 0;
-}
-
-.levi-card-text {
-  font-size: 17px;
-  line-height: 1.65;
-  margin-bottom: 32px;
 }
 
 .branded-card {

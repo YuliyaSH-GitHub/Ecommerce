@@ -31,74 +31,64 @@
         +fontMain (21px, 0.9)
     .nav-item
         padding: 0 10px
+    .nav-item:nth-child(n+2)
+        border-left: 2px solid $colorMain
+        height: 30px
 
-.navbar-light .navbar-toggler
-    border-color: $colorMain !important
-
-.navbar-toggler:focus
-    box-shadow: 0 0 0 0.20rem $colorMain !important
-
-.navbar-light .navbar-toggler-icon
-    background-image: none
-    color: $colorMain !important
-    text-align: center
-    font-size: 22px
-    display: inline
-
-.navbar-nav .nav-item:nth-child(n+2)
-    border-left: 2px solid $colorMain
-    height: 30px
+.navbar-light
+    .navbar-toggler
+        border-color: $colorMain !important
+        &:focus
+            box-shadow: 0 0 0 0.20rem $colorMain !important
+    .navbar-toggler-icon
+        background-image: none
+        color: $colorMain !important
+        text-align: center
+        font-size: 22px
+        display: inline
+    .navbar-brand
+        margin-right: 0
 
 .bg-light
     background-color: transparent!important
-
-.navbar-brand
-    margin-right: 0
 
 .levi-container
     background: $colorBackDark
 
 .levi-container-row
     padding: 67px 0 54px 0
-
-.levi-img
-    +justifyContent (center)
-
-.levi-btn
-    +fontMain (25px, 1.35)
-    display: block
-    width: 143px
-    height: 49px
-    color: $colorMain
-    background-color: transparent
-    border: solid 3px $colorMain
-    border-radius: 10px
-    padding: 7px 25px
-    margin-bottom: 51px
-
-.levi-btn:hover,
-.levi-btn:focus
-    color: $colorMain
-    background-color: $colorButtonHover
-    border-color: $colorMain
-    box-shadow: 0 0 0 0.01rem
-
-.levi-card
-    background-color: transparent
-    border: none
-    flex: 0 0 415px
-    box-sizing: border-box
-
-.levi-card-body
-    padding: 0
-
-.levi-card-title
-    +fontMain (61px, 0.89)
-    margin: 15px 0 26px 0
-
-.levi-card-text
-    +fontExtra (17px, 1.65)
-    margin-bottom: 32px
+    .levi-img
+        +justifyContent (center)
+    .levi-card
+        background-color: transparent
+        border: none
+        flex: 0 0 415px
+        box-sizing: border-box
+        &-body
+            padding: 0
+        &-title
+            +fontMain (61px, 0.89)
+            margin: 15px 0 26px 0
+        &-text
+            +fontExtra (17px, 1.65)
+            margin-bottom: 32px
+        &-btn
+            +fontMain (25px, 1.35)
+            display: block
+            width: 143px
+            height: 49px
+            color: $colorMain
+            background-color: transparent
+            border: solid 3px $colorMain
+            border-radius: 10px
+            padding: 7px 25px
+            margin-bottom: 51px
+            &:hover,
+            &:focus
+                color: $colorMain
+                background-color: $colorButtonHover
+                border-color: $colorMain
+                box-shadow: 0 0 0 0.01rem
 
 .branded-card
     flex-direction: row
